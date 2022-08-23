@@ -1,0 +1,152 @@
+/* Pagina Error */
+
+
+@media (max-width: 618px){
+    .cuerpoError{
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        margin: 40px 0;
+    }
+    .contenedorError{
+        text-align: center;
+        margin: 0 40px;
+        padding: 10px;
+        color: white;
+        h1{
+            color: white;
+            font-size: 4rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .botonError{
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: yellow;
+        padding: 10px 15px;
+        font-size: 2rem;
+    
+    }
+    .botonError:hover{
+        color: white;
+    }
+    .contenedorFigure{
+        display: flex;
+        justify-content: center;
+    }
+    .figureError{
+        border-radius: 100%;
+        width: 220px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 1px 20px rgba(184, 176, 176, 0.98);
+    }
+    .img-homero{
+        width: 450px;
+        height: 220px;
+    }
+}
+@media (min-width:619px) and (max-width:1023px){
+    .cuerpoError{
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        margin: 40px 0;
+    }
+    .contenedorError{
+        text-align: center;
+        margin: 0 40px;
+        padding: 10px;
+        color: white;
+        h1{
+            color: white;
+            font-size: 4rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .botonError{
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: yellow;
+        padding: 10px 15px;
+        font-size: 2rem;
+    
+    }
+    .botonError:hover{
+        color: white;
+    }
+    .contenedorFigure{
+        display: flex;
+        justify-content: center;
+    }
+    .figureError{
+        border-radius: 100%;
+        width: 400px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 1px 20px rgba(184, 176, 176, 0.98);
+    }
+    .img-homero{
+        width: 450px;
+        height: 360px;
+    }
+}
+@media (min-width: 1023px){
+    .cuerpoError{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+    }
+    .contenedorError{
+        text-align: center;
+        margin: 0 40px;
+        padding: 10px;
+        color: white;
+        h1{
+            color: white;
+            font-size: 4rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .botonError{
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: yellow;
+        padding: 10px 15px;
+        font-size: 2rem;
+    
+    }
+    .botonError:hover{
+        color: white;
+    }
+    .figureError{
+        border-radius: 100%;
+        width: 520px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 1px 20px rgba(184, 176, 176, 0.98);
+    }
+    .img-homero{
+        width: 550px;
+        height: 520px;
+    }
+}

@@ -1,0 +1,140 @@
+body{
+    background-color: black !important;
+}
+.galeria{
+	display: flex;
+	justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div figcaption{
+    font-size: 20px;
+    justify-content: center;
+}
+
+@keyframes headerAnimate{
+    0%{background-image: url(../img/header/bannerArg.png);}
+    25%{background-image: url(../img/header/bannerBj.png);}
+    50%{background-image: url(../img/header/bannerCity.png);}
+    75%{background-image: url(../img/header/bannerRiv.png);}
+    100%{background-image: url(../img/header/bannerBarca.png);}
+}
+header .slider{
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    animation-name: headerAnimate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    @media (max-width: 618px){
+        height: 20vh;
+        width: 100%;
+    }
+    @media (min-width:619px) and (max-width: 1023px){
+        height: 34vh;
+        width:  100%;
+    }
+    @media (min-width: 1024px){
+        height: 75vh;
+        width:  100%;
+    }
+}
+
+/*Extends*/
+.btnGeneral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease all;
+    &:hover{
+        background: black;
+        color: yellow;
+        border-color: yellow;
+    }
+}
+
+.btnNewslwtter{
+    @extend .btnGeneral;
+    width: 40%;
+    height: 35px;
+    background-color: $secondaryColor;
+    color: $black;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.btnCompra{
+    @extend .btnGeneral;
+    width: 40%;
+    height: 38px;
+    background-color: yellow;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.btnCodigo{
+    @extend .btnGeneral;
+    width: 20%;
+    height: 35px;
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/*Mixins*/
+@mixin texto-principal($textLg, $black, $textLight){
+    font-size: $textLg;
+    color: $black;
+    font-weight: $textLight;
+    font-family: $fontTree;
+    background-color: $secondaryColor;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezados{
+    @include texto-principal($textLg, $black, $textLight);
+    @media (max-width: 618px){
+        width: 100%;
+        margin: 10px 0;
+        height: 80px;
+        font-size: 1.3rem;
+    }
+    @media (min-width: 619px) and (max-width: 1023px){
+        margin: 10px 0;
+        height: 100px;
+        font-size: 2rem;
+    }
+    @media (min-width: 1024px){
+        margin: 10px 0;
+        height: 120px;
+        font-size: 3rem;
+    }
+}
+
+
+/*maps*/
+$paleta: (
+   uno: $black,
+   colorDos: $secondaryColor,
+   colorTres: $white,
+   colorCuatro: $bannerColor,
+)
+
+
+
+
+
+
+   

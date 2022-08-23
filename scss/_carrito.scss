@@ -1,0 +1,701 @@
+/*CSS CARRITO*/
+@media (max-width:618px){
+    body{
+        background-color: black;
+    }
+
+    /*Inicia Botonera*/
+    #botonera{
+        background-color: black;
+        .navbar-brand{
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: white;
+            .logo-nav{
+                width: 240px;
+            }
+        }
+        button{
+            border: none;
+            .btnBurguer{
+                width: 40px;
+                height: 40px;
+                fill: yellow;
+                border: none;
+                rect{
+                    width: 90%;
+                    height: 10px;
+                } 
+            }
+        }
+        ul li a{
+            color: yellow;
+            font-size: 0.9rem;
+            line-height: 1.6rem;
+            font-weight: 350;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            &:hover{
+                color: rgb(251, 255, 3);
+                font-weight: 600;
+                background-size: 100% 1px;
+            }
+        }
+    }
+    /*Fin Botonera*/
+    .banLiv{
+        background-size: cover;
+        background-repeat: repeat;
+        width: 100%;
+    }
+    /*Inicia Main*/
+    .fondo-img{
+        background-image: url(../img/pag-retros/fondo-compra2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        .contenedor-compra{
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "formCompra"
+            "infoCompra";
+            .formCompra{
+                grid-area: formCompra;
+                display: flex;
+                justify-content: center;
+                margin: 24px;
+                .text-compra{
+                    color: yellow;
+                }
+            }
+            .text-white{
+                color: white;
+                }
+            .infoCompra{
+                grid-area: infoCompra;
+                margin: 20px;
+                .titulo-codigo{
+                    color: yellow;
+                    text-align: center;
+                }
+                .card {
+                    margin: 50px;
+                    width: 250px;
+                    padding: .8em;
+                    background: white;
+                    position: relative;
+                    overflow: visible;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                   }
+                   
+                   .card-img {
+                    width: 100%;
+                    border-radius: .5rem;
+                    transition: .3s ease;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    cursor: pointer;
+                   }
+                   
+                   .card-info {
+                    padding-top: 10%;
+                   }
+                   
+                   svg {
+                    width: 20px;
+                    height: 20px;
+                   }
+                   
+                   .card-footer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-top: 1px solid black;
+                   }
+                   
+                   /*Text*/
+                   .text-title {
+                    font-weight: 900;
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                    color: black;
+                   }
+                   
+                   .text-body {
+                    font-size: .9em;
+                   }
+                   
+                   /*Button*/
+                   .card-button {
+                    border: 1px solid #252525;
+                    display: flex;
+                    padding: .3em;
+                    cursor: pointer;
+                    border-radius: 50px;
+                    transition: .3s ease-in-out;
+                   }
+                   
+                   /*Hover*/
+                   .card-img:hover {
+                    transform: translateY(-25%);
+                    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+                   }
+                   
+                   .card-button:hover {
+                    border: 1px solid black;
+                    background-color: yellow;
+                   }
+                .formCodigo{
+                    display: flex;
+                    justify-content: center;
+                    .contenedor-boton{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    /*Fin Main*/
+    /*Inicia Aside*/
+    .descuento{
+        background-color: $secondaryColor;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titulo-descuento{
+            font-size: 1.5rem;
+            font-family: $fontTree;
+            color: $black;
+        }
+    }
+    /*Fin Aside*/
+    /*Inicia Footer*/
+    .pie-pagina{
+        width: 100%;
+        background-color: black;
+        text-align: left;
+        .grupo-1{
+            margin: 5px;
+            padding: 45px 0;
+            .box{
+                font-size: 1rem;
+                color: white;
+                h3{
+                    color: yellow;
+                    font-size: 1.5rem;
+                    margin: 10px 0;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1rem;
+                }
+                p{
+                    margin: 10px 0;
+                    color: white;
+                }
+                .red-social svg{
+                    width: 30px;
+                    height: 30px;
+                    fill: yellow;
+                    margin: 10px 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .grupo-2{
+            height: 60px;
+            hr{
+                box-sizing: content-box;
+                height: 0;
+                margin-top: 1rem;
+                border: 0;
+                border-top: 2px solid white;
+            }
+            p{
+                color: white;
+                font-size: 1rem;
+                text-align: center;
+                margin: 10px;
+            }
+        }
+    }
+    /*Fin Footer*/
+}
+
+@media (min-width:619px) and (max-width:1023px){
+
+    .contenedorCarrito{
+        background-color: black;
+    }
+    /* Inicia Botonera */
+    #botonera{
+        background-color: black;
+        .navbar-brand{
+            text-decoration: none;
+            font-size: 2rem;
+            margin: 0 5px;
+            color: white;
+            display: flex;
+            .logo-nav{
+                width: 260px;
+            }
+        }
+        button{
+            border: none;
+            .btnBurguer{
+                width: 40px;
+                height: 40px;
+                fill: yellow;
+                border: none;
+                rect{
+                    width: 90%;
+                    height: 10px;
+                }  
+            }
+        }
+        ul{
+            margin: 0 10px;
+            li{
+                margin: 2px;
+                a{
+                    font-size: 1rem;
+                    color: yellow;
+                    line-height: 1.6rem;
+                    font-weight: 350;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+                    &:hover{
+                        color: rgb(251, 255, 3);
+                        font-weight: 600;
+                        background-size: 100% 2px;
+                    }
+                }
+            }
+        }
+    }
+    /* Fin Botonera */
+    .banLiv{
+        background-size: cover;
+        background-repeat: repeat;
+        width: 100%;
+    }
+    /* Inicia Main */
+    .fondo-img{
+        background-image: url(../img/pag-retros/fondo-compra2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        .formCompra{
+            grid-area: formCompra;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            margin: 24px;
+            .text-compra{
+                color: yellow;
+            }
+        }
+        .infoCompra{
+            grid-area: infoCompra;
+            margin: 20px;
+            .card {
+                margin: 50px;
+                width: 250px;
+                padding: .8em;
+                background: white;
+                position: relative;
+                overflow: visible;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+               }
+               
+               .card-img {
+                width: 100%;
+                border-radius: .5rem;
+                transition: .3s ease;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                cursor: pointer;
+               }
+               
+               .card-info {
+                padding-top: 10%;
+               }
+               
+               svg {
+                width: 20px;
+                height: 20px;
+               }
+               
+               .card-footer {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-top: 1px solid black;
+               }
+               
+               /*Text*/
+               .text-title {
+                font-weight: 900;
+                font-size: 1.2rem;
+                line-height: 1.5;
+                color: black;
+               }
+               
+               .text-body {
+                font-size: .9em;
+               }
+               
+               /*Button*/
+               .card-button {
+                border: 1px solid #252525;
+                display: flex;
+                padding: .3em;
+                cursor: pointer;
+                border-radius: 50px;
+                transition: .3s ease-in-out;
+               }
+               
+               /*Hover*/
+               .card-img:hover {
+                transform: translateY(-25%);
+                box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+               }
+               
+               .card-button:hover {
+                border: 1px solid black;
+                background-color: yellow;
+               }
+            .titulo-codigo{
+                color: yellow;
+                text-align: center;
+            }
+            .formCodigo{
+                display: flex;
+                justify-content: center;
+                .contenedor-boton{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    /* Fin Main */
+    /* Inicia Aside */
+    .descuento{
+        background-color: $secondaryColor;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titulo-descuento{
+            font-size: 1.5rem;
+            font-family: $fontTree;
+            color: $black;
+        }
+    }
+    /* Fin Aside */
+    /* Inicia Footer */
+    .pie-pagina{
+        width: 100%;
+        background-color: black;
+        .grupo-1{
+            margin: 10px;
+            padding: 45px 0;
+            display: block;
+            .box{
+                font-size: 20px;
+                color: white;
+                h3{
+                    color: yellow;
+                    font-size: 1.5rem;
+                    margin: 10px 0;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    margin: 2px;
+                    font-size: 1.5rem;
+                }
+                p{
+                    margin: 10px 0;
+                    color: white;
+                }
+                .red-social svg{
+                    width: 40px;
+                    height: 40px;
+                    fill: yellow;
+                    margin: 10px 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .grupo-2{
+            height: 60px;
+            hr{
+                box-sizing: content-box;
+                height: 0;
+                margin-top: 1rem;
+                border: 0;
+                border-top: 2px solid white;
+            }
+            p{
+                color: white;
+                font-size: 1rem;
+                text-align: center;
+                margin: 10px;
+            }
+        }
+    }
+    /*Fin Footer*/
+}
+
+@media (min-width: 1024px){
+
+    .contenedorCarrito{
+        background-color: black;
+    }
+    /* Inicia Botonera*/
+    #botonera{
+        background-color: black;
+        height: 110px;
+        .navbar-brand{
+            text-decoration: none;
+            font-size: 2.5rem;
+            margin: 0 10px;
+            color: white;
+            .logo-nav{
+                width: 60%;
+            }
+        }
+        ul{
+            margin: 0 20px;
+            li{
+                margin: 5px;
+                a{
+                    font-size: 1.5rem;
+                    color: yellow;
+                    line-height: 1.6rem;
+                    font-weight: 350;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+                    &:hover{
+                        color: rgb(251, 255, 3);
+                        font-weight: 600;
+                        background-size: 100% 2px;
+                    }
+                }
+            }
+        }
+    }
+    /* Fin Botonera */
+    .banLiv{
+        background-size: cover;
+        background-repeat: repeat;
+        width: 100%;
+    }
+    /* Inicia Main */
+    .fondo-img{
+        background-image: url(../img/header/fondo-carrito.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contenedor-compra{
+            display: grid;
+            grid-template-columns: 65% 35%;
+            grid-template-areas: 
+            "formCompra infoCompra";
+            .formCompra{
+                grid-area: formCompra;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 50px 0;
+                .formularioEnvío{
+                    width: 90%;
+                }
+                .form2{
+                    margin-top: 30px;
+                    width: 50%;
+                    .text-compra{
+                        color: yellow;
+                    }
+                }
+            }
+            .infoCompra{
+                grid-area: infoCompra;
+                padding: 10px;
+                .card {
+                    margin: 50px;
+                    width: 250px;
+                    padding: .8em;
+                    background: white;
+                    position: relative;
+                    overflow: visible;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                   }
+                   
+                   .card-img {
+                    width: 100%;
+                    border-radius: .5rem;
+                    transition: .3s ease;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    cursor: pointer;
+                   }
+                   
+                   .card-info {
+                    padding-top: 10%;
+                   }
+                   
+                   svg {
+                    width: 20px;
+                    height: 20px;
+                   }
+                   
+                   .card-footer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-top: 1px solid black;
+                   }
+                   
+                   /*Text*/
+                   .text-title {
+                    font-weight: 900;
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                    color: black;
+                   }
+                   
+                   .text-body {
+                    font-size: .9em;
+                   }
+                   
+                   /*Button*/
+                   .card-button {
+                    border: 1px solid #252525;
+                    display: flex;
+                    padding: .3em;
+                    cursor: pointer;
+                    border-radius: 50px;
+                    transition: .3s ease-in-out;
+                   }
+                   
+                   /*Hover*/
+                   .card-img:hover {
+                    transform: translateY(-25%);
+                    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+                   }
+                   
+                   .card-button:hover {
+                    border: 1px solid black;
+                    background-color: yellow;
+                   }
+                .titulo-codigo{
+                    color: yellow;
+                }
+            }
+        }
+    }
+    /* Fin Main */
+    /* Inicia Aside */
+    .descuento{
+        background-color: $secondaryColor;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titulo-descuento{
+            font-size: 2.5rem;
+            font-family: $fontTree;
+            color: $black;
+        }
+    }
+    /* Fin Aside */
+    /* Inicia Footer */
+    .pie-pagina{
+        width: 100%;
+        background-color: black;
+        .grupo-1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            margin: auto;
+            padding: 45px 0;
+            text-align: center;
+            .box{
+                font-size: 20px;
+                color: white;
+                h3{
+                    color: yellow;
+                    font-size: 1.5rem;
+                    margin: 10px 0;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                }
+                p{
+                    margin: 10px 0;
+                    color: white;
+                    font-size: 1.3rem;
+                }
+                .red-social svg{
+                    width: 40px;
+                    height: 40px;
+                    fill: yellow;
+                    margin: 10px 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .grupo-2{
+            height: 60px;
+            hr{
+                box-sizing: content-box;
+                height: 0;
+                margin-top: 1rem;
+                border: 0;
+                border-top: 2px solid white;
+            }
+            p{
+                color: white;
+                font-size: 1rem;
+                text-align: center;
+                margin: 10px;
+            }
+        }
+    }
+    /* Fin Footer */   
+}
+
+
+
+
+
+
+

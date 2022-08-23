@@ -1,0 +1,738 @@
+/*CSS NOSOTROS*/
+
+@media (max-width:618px){
+
+    body{
+        background-color: black;
+    }
+    /* Inicia Botonera */
+    .botonera{
+        background-color: black;
+        .navbar-brand{
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: white;
+            .logo-nav{
+                width: 240px;
+            }
+        }
+        button{
+            border: none;
+            .btnBurguer{
+                width: 40px;
+                height: 40px;
+                fill: yellow;
+                border: none;
+                rect{
+                    width: 90%;
+                    height: 10px;
+                } 
+            }
+        }
+        ul li a{
+            color: yellow;
+            font-size: 0.9rem;
+            line-height: 1.6rem;
+            font-weight: 350;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            &:hover{
+                color: rgb(251, 255, 3);
+                font-weight: 600;
+                background-size: 100% 1px;
+            }
+        }
+    }
+    .banMadrid{
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    /* Fin Botonera */
+    /* Inicia Main */
+    .nosotros{
+        margin: 30px;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: $white;
+        display: block;
+        .quienesSomos{
+            text-align: center;
+            .text-quienessomos{
+                h2{
+                    color: $secondaryColor;
+                    text-align: center;
+                    font-size: 2rem;
+                    padding: 5px;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .box-contacto-uno{
+            margin: 20px;
+            padding: 10px;
+            .iconos-contacto{
+                text-align: center;
+                .iconos{
+                    width: 40px;
+                    height: 40px;
+                    color: $secondaryColor;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .formMsj{
+            padding: 5px;
+            .formContent{
+                margin: 10px;
+                font-size: 1.5rem;
+            }
+            .box-botonMsj{
+                display: flex;
+                justify-content: center;
+                .botonMsj{
+                    font-family: inherit;
+                    font-size: 20px;
+                    background: $secondaryColor;
+                    color: $black;
+                    padding: 0.7em 1em;
+                    padding-left: 0.9em;
+                    display: flex;
+                    align-items: center;
+                    border: none;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    transition: all 0.2s;
+                    svg {
+                        display: block;
+                        transform-origin: center center;
+                        transition: transform 0.3s ease-in-out;
+                    }
+                    a{
+                        text-decoration: none;
+                        span{
+                            display: block;
+                            margin-left: 0.3em;
+                            transition: all 0.3s ease-in-out;
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                    &:hover{
+                        .svg-flecha {
+                            animation: fly-1 0.6s ease-in-out infinite alternate;
+                        }
+                        svg {
+                            transform: translateX(1.2em) rotate(45deg) scale(1.1);
+                        }
+                        span {
+                            transform: translateX(5em);
+                        }
+                    }
+                    &:active{
+                        transform: scale(0.95);
+                    } 
+                    
+                }
+                @keyframes fly-1 {
+                    from {
+                        transform: translateY(0.1em);
+                    }
+                    to {
+                        transform: translateY(-0.1em);
+                    }
+                }
+            }
+        }
+        .mapa{
+            text-align: center;
+            margin: 10px 0;
+            iframe{
+                width: 100%;
+                height: 250px;
+            }
+        }
+        .subNosotros{
+            color: map-get($map: $paleta, $key: colorDos);
+            text-align: center;
+            font-size: 2rem;
+            margin: 15px;
+        }
+        .textoAcordion{
+            font-size: 1rem;
+        }
+        .cuidadosProducto{
+            margin: 30px 0;
+        }
+    }
+
+    /* Fin MAIN  */
+    /* Inicia Aside */
+    .descuento{
+        background-color: $secondaryColor;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titulo-descuento{
+            font-size: 1.5rem;
+            font-family: $fontTree;
+            color: $black;
+            margin: 0 auto;
+        }
+    }   
+    /*Fin Aside*/
+    /* Inicia Footer */
+    .pie-pagina{
+        width: 100%;
+        background-color: black;
+        text-align: left;
+        .grupo-1{
+            margin: 5px;
+            padding: 45px 0;
+            .box{
+                font-size: 1rem;
+                color: white;
+                h3{
+                    color: yellow;
+                    font-size: 1.5rem;
+                    margin: 10px 0;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1rem;
+                }
+                p{
+                    margin: 10px 0;
+                    color: white;
+                }
+                .red-social svg{
+                    width: 30px;
+                    height: 30px;
+                    fill: yellow;
+                    margin: 10px 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .grupo-2{
+            height: 60px;
+            hr{
+                box-sizing: content-box;
+                height: 0;
+                margin-top: 1rem;
+                border: 0;
+                border-top: 2px solid white;
+            }
+            p{
+                color: white;
+                font-size: 1rem;
+                text-align: center;
+                margin: 10px;
+            }
+        }
+    }
+    /* Fin Footer */
+}
+
+@media (min-width:619px) and (max-width: 1023px){
+
+    .botonera{
+        background-color: black;
+        .navbar-brand{
+            text-decoration: none;
+            font-size: 2rem;
+            margin: 0 5px;
+            color: white;
+            display: flex;
+            .logo-nav{
+                width: 260px;
+            }
+        }
+        button{
+            border: none;
+            .btnBurguer{
+                width: 40px;
+                height: 40px;
+                fill: yellow;
+                border: none;
+                rect{
+                    width: 90%;
+                    height: 10px;
+                } 
+            }
+        }
+        ul{
+            margin: 0 10px;
+            li{
+                margin: 2px;
+                a{
+                    font-size: 1rem;
+                    color: yellow;
+                    line-height: 1.6rem;
+                    font-weight: 350;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+                    &:hover{
+                        color: rgb(251, 255, 3);
+                        font-weight: 600;
+                        background-size: 100% 2px;
+                    }
+                }
+            }
+        }
+    }
+    .banMadrid{
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    /* Fin Botonera */
+    /* Inicia Main  */
+    .nosotros{
+        margin: 30px;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: $white;
+        display: block;
+        .quienesSomos{
+            text-align: center;
+            h2{
+                color: $secondaryColor;
+                font-size: 2.5rem;
+                text-align: center;
+            }
+        }
+        .box-contacto-uno{
+            margin: 20px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .iconos-contacto{
+                text-align: center;
+                .iconos{
+                    width: 50px;
+                    height: 50px;
+                    color: $secondaryColor;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .formMsj{
+            padding: 5px;
+            .formContent{
+                margin: 0;
+            }
+            .botonMsj{
+                font-family: inherit;
+                font-size: 20px;
+                background: $secondaryColor;
+                color: $black;
+                padding: 0.7em 1em;
+                padding-left: 0.9em;
+                display: flex;
+                align-items: center;
+                border: none;
+                border-radius: 16px;
+                overflow: hidden;
+                transition: all 0.2s;
+                svg{
+                    display: block;
+                    transform-origin: center center;
+                    transition: transform 0.3s ease-in-out;
+                }
+                a{
+                    text-decoration: none;
+                    span{
+                        display: block;
+                        margin-left: 0.3em;
+                        transition: all 0.3s ease-in-out;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                &:hover{
+                    .svg-flecha{
+                        animation: fly-1 0.6s ease-in-out infinite alternate;
+                    }
+                    svg{
+                        transform: translateX(1.2em) rotate(45deg) scale(1.1);
+                    }
+                    span{
+                        transform: translateX(5em);
+                    }
+                }
+                &:active{
+                    transform: scale(0.95);
+                }
+                @keyframes fly-1 {
+                    from{
+                        transform: translateY(0.1em);
+                    }
+                    to{
+                    transform: translateY(-0.1em);
+                    }
+                }
+            }
+        }
+        .mapa{
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            iframe{
+                width: 90%;
+                height: 250px;
+            }
+        }
+        .preguntas{
+            text-align: center;
+            .subNosotros{
+                color: map-get($map: $paleta, $key: colorDos);
+                text-align: center;
+                font-size: 2.5rem;
+            }
+            .textoAcordion{
+                font-size: 1.2rem;
+                text-align: left;
+            }
+        }
+        .cuidadosProducto{
+            margin: 30px 0;
+        }
+    }
+    /* Fin Main */
+    /* Inicia Aside */
+    .descuento{
+        background-color: $secondaryColor;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titulo-descuento{
+            font-size: 1.8rem;
+            font-family: $fontTree;
+            color: $black;
+        }
+    }  
+    /* Fin Aside */
+    /* Inicia Footer */
+    .pie-pagina{
+        width: 100%;
+        background-color: black;
+        .grupo-1{
+            margin: 10px;
+            padding: 45px 0;
+            display: block;
+            text-align: left;
+            .box{
+                font-size: 20px;
+                color: white;
+                h3{
+                    color: yellow;
+                    font-size: 1.5rem;
+                    margin: 10px 0;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    margin: 2px;
+                    font-size: 1.2rem;
+                }
+                p{
+                    margin: 10px 0;
+                    color: white;
+                    font-size: 1.2rem;
+                }
+                .red-social svg{
+                    width: 40px;
+                    height: 40px;
+                    fill: yellow;
+                    margin: 10px 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .grupo-2{
+            height: 60px;
+            hr{
+                box-sizing: content-box;
+                height: 0;
+                margin-top: 1rem;
+                border: 0;
+                border-top: 2px solid white;
+            }
+            p{
+                color: white;
+                font-size: 1rem;
+                text-align: center;
+                margin: 10px;
+            }
+        }
+    }
+    /*Fin Footer*/
+}
+
+@media (min-width: 1024px){
+
+    /* Inicia Botonera */
+    .botonera{
+        background-color: black;
+        height: 110px;
+        .navbar-brand{
+            text-decoration: none;
+            font-size: 2.5rem;
+            margin: 0 10px;
+            color: white;
+            .logo-nav{
+                width: 60%;
+            }
+        }
+        ul{
+            margin: 0 20px;
+            li{
+                margin: 5px;
+                a{
+                    font-size: 1.5rem;
+                    color: yellow;
+                    line-height: 1.6rem;
+                    font-weight: 350;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+                    &:hover{
+                        color: rgb(251, 255, 3);
+                        font-weight: 600;
+                        background-size: 100% 2px;
+                    }
+                }
+            }
+        }
+    }
+    .banMadrid{
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    /* Fin Botonera */
+    /* Inicia Main  */
+    .nosotros{
+        margin: 40px;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: $white;
+        display: block;
+        .quienesSomos{
+            text-align: center;
+            h2{
+                color: $secondaryColor;
+                font-size: 2.5rem;
+                text-align: center;
+            }
+        }
+        .box-contacto-uno{
+            margin: 20px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            .iconos-contacto{
+                text-align: center;
+                .iconos{
+                    width: 70px;
+                    height: 70px;
+                    color: $secondaryColor;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .box-contacto-dos{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 10px;
+            padding: 5px;
+        }
+        .formMsj{
+            padding: 5px;
+            .formContent{
+                margin: 0;
+            }
+            .botonMsj{
+                font-family: inherit;
+                font-size: 20px;
+                background: $secondaryColor;
+                color: $black;
+                padding: 0.7em 1em;
+                padding-left: 0.9em;
+                display: flex;
+                align-items: center;
+                border: none;
+                border-radius: 16px;
+                overflow: hidden;
+                transition: all 0.2s;
+                svg{
+                    display: block;
+                    transform-origin: center center;
+                    transition: transform 0.3s ease-in-out;
+                }
+                a{
+                    text-decoration: none;
+                    span{
+                        display: block;
+                        margin-left: 0.3em;
+                        transition: all 0.3s ease-in-out;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                &:hover{
+                    .svg-flecha{
+                        animation: fly-1 0.6s ease-in-out infinite alternate;
+                    }
+                    svg{
+                        transform: translateX(1.2em) rotate(45deg) scale(1.1);
+                    }
+                    span{
+                        transform: translateX(5em);
+                    }
+                }
+                &:active{
+                    transform: scale(0.95);
+                }
+                @keyframes fly-1 {
+                    from{
+                        transform: translateY(0.1em);
+                    }
+                    to{
+                    transform: translateY(-0.1em);
+                    }
+                }
+            }
+        }
+        .mapa{
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            iframe{
+                width: 90%;
+                height: 350px;
+            }
+        }
+        .preguntas{
+            text-align: center;
+            .subNosotros{
+                color: map-get($map: $paleta, $key: colorDos);
+                text-align: left;
+                font-size: 2rem;
+            }
+            .textoAcordion{
+                font-size: 1.3rem;
+                text-align: left;
+            }
+        }
+        .cuidadosProducto{
+            margin: 30px 0;
+            h2{
+                color: yellow;
+            }
+        }
+    }
+    /* Fin Main */
+    /* Inicia Aside */
+    .descuento{
+        background-color: $secondaryColor;
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titulo-descuento{
+            font-size: 2.5rem;
+            font-family: $fontTree;
+            color: $black;
+        }
+    }
+    /* Fin Aside */  
+    /* Inicia Footer */
+    .pie-pagina{
+        width: 100%;
+        background-color: black;
+        .grupo-1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            margin: auto;
+            padding: 45px 0;
+            text-align: center;
+            .box{
+                font-size: 20px;
+                color: white;
+                h3{
+                    color: yellow;
+                    font-size: 1.5rem;
+                    margin: 10px 0;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                    margin: 2px;
+                }
+                p{
+                    margin: 10px 0;
+                    color: white;
+                    font-size: 1.3rem;
+                }
+                .red-social svg{
+                    width: 40px;
+                    height: 40px;
+                    fill: yellow;
+                    margin: 10px 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .grupo-2{
+            height: 60px;
+            hr{
+                box-sizing: content-box;
+                height: 0;
+                margin-top: 1rem;
+                border: 0;
+                border-top: 2px solid white;
+            }
+            p{
+                color: white;
+                font-size: 1rem;
+                text-align: center;
+                margin: 10px;
+            }
+        }
+    }
+    /* Fin Footer */
+}
+
+
+
+   
+
+
+
+
+
+
+
